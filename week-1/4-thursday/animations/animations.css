@@ -1,0 +1,61 @@
+
+/* The element to apply the animation to */
+
+h1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: royalblue;
+  animation-name: dolphin;
+  animation-duration: 4s;
+  animation-iteration-count:10;
+}
+/* The animation code */
+
+@keyframes dolphin {
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200x;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+/* Extra Animation Code options */
+
+/* h1  { 
+    /* Delay animation start for 2 seconds */
+/* animation-delay:2s; */
+
+/* Loop animation 3 times */
+/* animation-iteration-count:3; */
+
+/* Play animation backwards */
+/* animation-direction:reverse; */
+
+/* Play animation at same speed through out  */
+/* animation-timing-function:linear; */
+
+/* If animation is not available, display end state */
+/* animation-fill-mode:forwards; */
+/* }  
