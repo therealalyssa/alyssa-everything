@@ -12,7 +12,8 @@
   
   .navbar {
     /* background: #131313; */
-    background:rgb(140, 230, 140);
+    background:#fb64c3;
+    /* background: #fffd46; */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,20 +37,23 @@
   
   #navbar__logo {
     /* background-color:#131313; */
-    background:rgb(140, 230, 140);
+    background:#fb64c3; 
+    /* background: #fffd46; */
     /* background-color: #ff8177; */
     /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
     background-size: 100%;
     background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: white;
-    -moz-text-fill-color: white;
+    color:#fffd46;
+    font-family: 'Pacifico';
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
   }
+
+  
   
   .navbar__menu {
     display: flex;
@@ -62,7 +66,7 @@
   }
   
   .navbar__links {
-    color: #fff;
+    color:#fffd46;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,10 +96,10 @@
     outline: none;
     border-radius: 4px;
     background: #833ab4; 
-    background: -webkit-linear-gradient(to right, #B0EAB6, #1FEF36, #0D8F1C);
-    background: linear-gradient(to right, #B0EAB6, #1FEF36, #0D8F1C);
-    /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); */
+    /* background: -webkit-linear-gradient(to right, #25f43a, #1fd7ef, #280ed3);
+    background: linear-gradient(to right, #25f43a, #1fd7ef, #280ed3); */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     color: #fff;
     transition: all 0.3s ease;
   }
@@ -129,7 +133,8 @@
     }
   
     .navbar__menu.active {
-      background: #131313;
+      /* background: #fffd46; */
+      background:#fb64c3;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -203,13 +208,16 @@
 
   /* Hero Section */
   .hero {
-    background: #000000;
+    /* background: #fffd46; */
+    /* background:#fb64c3; */
+    background: #131313;
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
   }
   
 .hero2 {
-  background: #000000;
+  /* background:#fb64c3; */
+  background: #131313;
   background: linear-gradient(to right, #161616, #000000);
   padding: 200px 0;
 }
@@ -250,6 +258,8 @@
     -webkit-text-fill-color: white;
     -moz-text-fill-color: white;
   }
+
+
   
   .hero__description {
     font-size: 60px;
@@ -287,7 +297,9 @@
   
   /* About Section */
   .main {
-    background-color: #131313;
+    /* background-color: #fffd46; */
+    /* background:#fb64c3; */
+    background: #131313;
     padding: 10rem 0;
   }
   
@@ -402,14 +414,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: url(elf2.png);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
   }
   
-  .fa-layer-group,
+  /* .fa-layer-group,
   .fa-users {
     font-size: 14rem;
-  }
+  } */
   
   #card-2 {
     background: #ff512f;
@@ -490,6 +505,8 @@
   
   /* Services Section */
   .services {
+    /* background: #131313; */
+    /* background:#fffd46; */
     background: #131313;
     display: flex;
     flex-direction: column;
@@ -526,34 +543,50 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    transition: 0.3s ease-in;
+    background-image: url(food1.png);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat; 
+   transition: 0.3s ease-in;
   }
   
+  
   .services__card:nth-child(2) {
-    background: #1fa2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
+    background-image: url(food2.png)
+    /* background: #1fa2ff; /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(
       to right,
       #a6ffcb,
       #12d8fa,
       #1fa2ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
+    ); Chrome 10-25, Safari 5.1-6 */ 
+    /* background: linear-gradient(
       to right,
       #a6ffcb,
       #12d8fa,
-      #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      #1fa2ff */
+    /* );W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   .services__card:nth-child(3) {
-    background-image: linear-gradient(
+    background-image: url(food4.png)
+    /* background-image: linear-gradient(
       -225deg,
       #231557 0%,
       #44107a 29%,
       #ff1361 67%,
       #fff800 100%
-    );
+    ); */
+  }
+  .services__card:nth-child(4) {
+    background-image: url(food3.png)
+    /* background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    ); */
   }
   
   .services__card h2 {
@@ -578,7 +611,9 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #131313;
+    /* background: #131313; */
+    background: #fffd46;
+    /* background: #ff1ead; */
     font-size: 1rem;
   }
   
@@ -606,7 +641,9 @@
   
   /* Footer CSS */
   .footer__container {
-    background-color: #131313;
+    /* background-color: #131313; */
+    /* background-color:#fffd46; */
+    background: #131313;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -719,4 +756,8 @@
       padding: 10px;
       width: 100%;
     }
+  }
+
+  .hero , #home {
+    background-color:#fffd46;
   }
