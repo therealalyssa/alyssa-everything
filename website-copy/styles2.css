@@ -11,9 +11,7 @@
   }
   
   .navbar {
-    /* background: #131313; */
     background:#fb64c3;
-    /* background: #fffd46; */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,10 +34,7 @@
   }
   
   #navbar__logo {
-    /* background-color:#131313; */
     background:#fb64c3; 
-    /* background: #fffd46; */
-    /* background-color: #ff8177; */
     /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
     background-size: 100%;
     background-clip: text;
@@ -268,17 +263,19 @@
       to right,
       #9114ff,
       #da22ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
+    ); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(
       to right,
       #8f0eff,
       #da22ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
+    );  */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-size: 100%;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: white;
-    -moz-text-fill-color: white;
+    -moz-text-fill-color: white; */
   }
   
   .highlight {
@@ -503,6 +500,7 @@
     }
   }
   
+   
   /* Services Section */
   .services {
     /* background: #131313; */
