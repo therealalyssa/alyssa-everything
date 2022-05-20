@@ -1,3 +1,5 @@
+// Loops
+
 const myAnswer = prompt("Enter in your number");
 
 if (myAnswer == 23) {
