@@ -96,7 +96,10 @@ while (numberOfPizzas >= 10) {
 const myNewString = "Hell@ the#e";
 for (let i = 0; i < myNewString.length; i++) {
   if (myNewString[i] === "@" || myNewString[i] === "#") {
-    console.log("error!There is a symbol in there!FOund a ", myNewString[i]);
+    console.log(
+      "error!There is a symbol in there!Found a character",
+      myNewString[i]
+    );
     break;
   }
 }
@@ -104,5 +107,5 @@ for (let i = 0; i < myNewString.length; i++) {
 // Exercise 6
 
 for (let pizza = 0; pizza < 10; pizza++) {
-  console.log(`Number of pizza mase: $(pizza)`);
+  console.log(`Number of pizza made: $(pizza)`);
 }
