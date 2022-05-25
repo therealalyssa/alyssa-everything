@@ -71,3 +71,18 @@ const numbers = [5, 6, 7, 8, 9, 10];
 const sum =
   numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5];
 console.log(sum / numbers.length);
+
+// Exercise 6
+
+const user = {
+  name: "John",
+  age: 5,
+  isAdmin: true,
+};
+
+for (const key in user) {
+  console.log(key);
+  console.log(user["age"]);
+}
+
+// const myFavNumber
