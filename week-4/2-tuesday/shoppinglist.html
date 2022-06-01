@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Shopping List</title>
+    <script>
+      let shoppingList = [];
+      function addItem() {
+        let itemToAdd = {
+          item: document.getElementById("item").value,
+          quantity: document.getElementById("qty").value,
+        };
+        shoppingList.push(itemToAdd);
+        display();
+      }
+
+
+      //   function display() {
+      //     let content = "";
+      //     for (let i of shoppingList) {
+      //       content += i.item + "x" + i.quantity + "&#10062; \n ";
+      //     }
+      //     document.getElementById("display").innerHTML = content;
+      //   }
+    </script>
+  </head>
+  <body>
+    <h1>Shopping List</h1>
+    <input type="text" id="item" /> x
+    <input type="text" id="qty" />
+    <button onclick="addItem();">Add to List</button>
+    <p id="display"></p>
+  </body>
+</html>
