@@ -10,3 +10,11 @@ const nextNavBtn = document.getElementById("nav-button--next");
 // Slider Components
 
 let currentSlide = 0;
+
+prevNavBtn.addEventListener("click", function () {
+  changeSlide();
+}); // this is a call back function, a function isn't being used as an argument
+
+nextNavBtn.addEventListener("click", function () {
+  changeSlide();
+});
