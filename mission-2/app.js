@@ -12,7 +12,7 @@ if (person == null || person == "") {
   person;
 }
 // ********** set date for footer************
-// select span
+
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 
