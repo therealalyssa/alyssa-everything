@@ -9,28 +9,15 @@ if (person == null || person == "") {
       person +
       "! Please click ok, to discover your next thrilling adventure!"
   );
+  person;
 }
-
-// function askName() {
-//   let username = sessionStorage.getItem("username");
-
-//   if (username === null) {
-//     username = prompt(
-//       "To make your time on this website better, please enter your name."
-//     );
-//   }
-
-//   if (username != null) {
-//     document.getElementById("userpara").innerHTML = "Hello, " + username;
-//     sessionStorage.setItem("username", username);
-//   } else {
-//     document.getElementById("noUser").innerHTML = "Welcome, Stranger!";
-//   }
-// }
 // ********** set date for footer************
 // select span
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+// use getBoundingClientRect() to Return the size of an element and its position relative to the viewport:
+// const rect = element.getBoundingClientRect();
 
 // ********** close links ************
 const navToggle = document.querySelector(".nav-toggle");
@@ -51,7 +38,6 @@ navToggle.addEventListener("click", function () {
 });
 
 // ********** fixed navbar ************
-
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
@@ -105,9 +91,20 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
-// calculate heights
 
-// Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport.
-// pageYOffset is a read - only window property that returns the number of pixels the document has been scrolled vertically.
-// slice extracts a section of a string without modifying original string
-//offsetTop - A Number, representing the top position of the element, in pixels
+// function askName() {
+//   let username = sessionStorage.getItem("username");
+
+//   if (username === null) {
+//     username = prompt(
+//       "To make your time on this website better, please enter your name."
+//     );
+//   }
+
+//   if (username != null) {
+//     document.getElementById("userpara").innerHTML = "Hello, " + username;
+//     sessionStorage.setItem("username", username);
+//   } else {
+//     document.getElementById("noUser").innerHTML = "Welcome, Stranger!";
+//   }
+// }
