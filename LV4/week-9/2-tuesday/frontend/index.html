@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="userLoginFetch.js"></script>
+  <body>
+    <h1>Login</h1>
+    <!-- HTML Traditional Form Submission -->
+    <!-- <form action="http://localhost:4000/login" method="post">
+      <div>Email</div>
+      <input class="input-box" type="email" name="email" />
+      <div>Password</div>
+      <input class="input-box" type="password" name="password" />
+      <input class="submitButton" type="submit" />
+    </form> -->
+
+    <!-- Using FETCH to submit form -->
+    <form id="loginForm">
+      <div>Email</div>
+      <input id="email" class="input-box" type="email" name="email" />
+      <div>Password</div>
+      <input id="password" class="input-box" type="password" name="password" />
+      <input class="submitButton" type="submit" />
+    </form>
+    <div id="loginResult"></div>
+  </body>
+</html>

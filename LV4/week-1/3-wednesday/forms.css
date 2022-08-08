@@ -1,0 +1,53 @@
+
+input[type=text], input[type=email] {
+    padding: 2px 2px;
+    margin:8px 0px;
+    border:none;
+    border-bottom:2px solid purple;
+    }
+
+label {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+    font-family:Tahoma,sans-serif;
+}
+
+input {
+    width:40%;
+}
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+h1 {
+    color:blueviolet;
+}
+
+form > label {
+    color:blueviolet;
+}
+
+input[type=radio] {
+    width:20px;
+}
+
+input[type=radio] + label {
+    color:purple;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color:white;
+    width:30%;
+}
+
+textarea {
+    border: 2px solid purple;
+}
+
+select, option{
+    color:purple;
+}
+

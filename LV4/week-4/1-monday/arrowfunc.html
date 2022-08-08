@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <title>Arrow func</title>
+    <script>
+      // Arrow functions (makes functions shorter--> ()=>{}  eg [ let x = () ==> y]
+      let divideNum = (num1, num2) => num1 / num2;
+
+      let isEven = (num1) => num1 % 2 === 0;
+
+      //   default parameters
+
+      const divideNum1 = (num1, num2 = 1) => {
+        return num1 / num2;
+      };
+      console.log(divideNum1(6, 3));
+      console.log(divideNum1(10)); // Should print the same number
+
+      //   Exercise 3
+
+      let word1 = "hello ";
+      let word2 = "world";
+      let combined = (word1, word2) => word1 + word2;
+      console.log(combined);
+
+      //   Template Literals
+      let word3 = "Hello";
+      let word4 = "world";
+      let combined2 = `${word3} ${word4}`;
+      console.log(combined2);
+
+      //   Spread Operator
+      let arr1 = [1, 2, 3, 4, 5];
+      let arr2 = [0, ...arr1, 6, 7, 8, 9];
+      console.log(arr2); //[0,1,2,3,4,5,6,7,8,9] console.log(arr1); //[1,2,3,4,5]
+
+      //   Regular Expressions (Regex)
+
+      //   --defining an expression
+      // 1
+      let re = new RegExp("a|b");
+      // 2
+      let re2 = /a|b/;
+
+      // testing
+      let answer = re.test("a");
+
+      // Regex bracket expressions
+      /0[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/; // Mobile Number: 10 digits starting with 0
+
+      /[a-zA-Z][a-zA-Z][0-9][0-9][0-9][0-9][0-9][0-9]/; //Driver license: 2 letters and 6 digits
+
+      //  -- Regex character classes
+      // \w matches a character from a-z, A-Z, 0-9 and underscore
+      // \d matches a character from 0 to 9
+      // \s matches a white space, line break or tab
+
+      /0\d\d\d\d\d\d\d\d\d/; //Mobile Number: 10 digits starting with 0
+      /[a-zA-Z][a-zA-Z]\d\d\d\d\d\d/; //Driver license: 2 letters and 6 digits
+
+      //   Regex Quantifier
+      /^0\d{9}$/; //Mobile Number: 10 digits starting with 0
+      /^[a-zA-Z]{2}\d{6}$/; //Driver license: 2 letters and 6 digits
+
+      //  :\w+@\w+.com //Email regex
+    </script>
+  </head>
+  <body>
+    <h1>Hello</h1>
+  </body>
+</html>

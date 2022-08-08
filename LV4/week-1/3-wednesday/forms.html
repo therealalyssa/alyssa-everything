@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="forms.css" rel="stylesheet" type="text/css">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>The form</h1>
+
+    <form action="mailto:cicibarrett@gmail.com" method="post">
+
+    <!-- Name -->
+    <label>Name:</label><input type="text" name="name"><br>
+    
+    <!-- Email -->
+    <label>Email:</label><input type="email" name="email"><br>
+
+    <!-- Subject -->
+    <label for="subject">Subject:</label>
+    <select id="subject">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Sales</option>
+    <option value="cat">Support</option>
+     <option value="hamster">Others</option>
+    </select> <br>
+
+  <!-- Favourite Dog -->
+    <label>Favourite Dog: </label> <br>
+    <input type="radio" name="favouriteDog" value="Husky">
+    <label>Husky</label><br>
+    <input type="radio" name="favouriteDog" value="Retriever">
+    <label>Retriever</label><br>
+    <input type="radio" name="favouriteDog" value="Poodle">
+    <label>Poodle</label><br>
+
+    <!-- Message -->
+    <label>Message: </label> <br>
+    <textarea name="text" class="feedback-input"placeholder="Message"></textarea>
+    </select><br>
+
+<!-- Submit -->
+<input type="Submit" value="Submit">
+
+ </form>
+</body>
+</html>
